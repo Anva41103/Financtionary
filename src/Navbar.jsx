@@ -8,8 +8,8 @@ export function Nav() {
                 <div className="w-full fixed bg-pastel nav-bar flex flex-row justify-between h-16 rounded-2xl ">
                     <div className="flex flex-row gap-10 mx-4 justify-between">
                         <img className="h-12 m-2 w-12 rounded-full" src="./src/assets/logo.jpeg" alt="" />
-                        <button className="m-2 px-4 h-11 rounded-full border-2 active:scale-95 border-slate-300 hover:bg-slate-100 active:bg-slate-200 text-sm sm:text-base">Home</button>
-                        <button className="m-2 px-4 h-11 rounded-full border-2 active:scale-95 border-slate-300 hover:bg-slate-100 active:bg-slate-200 text-sm sm:text-base">Blog</button>
+                        <Link to="/Home"><button  className="m-2 px-4 h-11 rounded-full border-2 active:scale-95 border-slate-300 hover:bg-slate-100 active:bg-slate-200 text-sm sm:text-base">Home</button></Link>
+                        <Link to="/Blog"><button className="m-2 px-4 h-11 rounded-full border-2 active:scale-95 border-slate-300 hover:bg-slate-100 active:bg-slate-200 text-sm sm:text-base">Blog</button></Link>
                         <button className="m-2 px-4 h-11 rounded-full border-2 active:scale-95 border-slate-300 hover:bg-slate-100 active:bg-slate-200 text-sm sm:text-base">Dictionary</button>
                         <button className="m-2 px-4 h-11 rounded-full border-2 active:scale-95 border-slate-300 hover:bg-slate-100 active:bg-slate-200 text-sm sm:text-base">About Us</button>
                         <button className="m-2 px-4 h-11 rounded-full border-2 active:scale-95 border-slate-300 hover:bg-slate-100 active:bg-slate-200 text-sm sm:text-base">Login</button>

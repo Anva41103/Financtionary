@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Home } from './HomePage'
+import { Blog } from "./Blog"
 
 const router = createBrowserRouter([
   {
@@ -14,7 +16,14 @@ const router = createBrowserRouter([
         path:'',
         element: <Home/>
       },
-      
+      {
+        path:'/Blog',
+        element: <Blog/>
+      },
+      {
+        path:'/Home',
+        element: <Home/>
+      },
     ]
   }
 
