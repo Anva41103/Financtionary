@@ -3,8 +3,12 @@ export function Foot() {
 
     return (
         <>
-            <footer class="bg-pastel-xteal text-white p-5 text-center">
+            <footer class="footercol text-white p-5 text-center">
                 <div class="max-w-5xl mx-auto flex flex-wrap justify-between">
+
+                    <div class="flex-1 min-w-[200px] m-2">
+                        <img className="-ml-24 rounded-full" src="./src/assets/logo.jpeg"/>
+                    </div>
 
                     <div class="flex-1 min-w-[200px] m-2">
                         <h3 class="text-lg font-semibold">Contact Us</h3>
