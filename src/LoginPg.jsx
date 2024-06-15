@@ -1,13 +1,13 @@
 import { Nav } from './Navbar'
-import { Main } from  './MainSection'
+import  LoginB  from  './LoginB'
 import { Foot } from './Footer'
 
-export function Home(){
+export function Login(){
 
     return(
         <>
             <Nav/>
-            <Main/>
+            <LoginB/>
             <Foot/>
         </>
     )
