@@ -78,14 +78,18 @@ html {
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
-    color: #2c9caf;
+    color: #073a43;
     transition: all 1000ms;
     font-size: 15px;
     position: relative;
     overflow: hidden;
     outline: 2px solid #2c9caf;
   }
-  
+  .button_wotd{
+   border-radius: 100%;
+   border-color: #e7e7e7
+   border;
+  }
   .navbutton:hover {
     color: #ffffff;
     transform: scale(1.1);
@@ -391,13 +395,15 @@ this softens the color of the shapes, but most prominently shows the shapes as i
 .App {
   /* cap the width of the main panel */
   margin-top: 100px;
+  margin-bottom: 100px;
   max-width: 800px;
   width: 90vw;
   /* minimum height to avoid a change in size with one additional input element */
   min-height: 600px;
   background: var(--theme-two);
   border-radius: 20px;
-  box-shadow: 0 2px 5px -6px var(--text),0 0 30px -50px var(--text);
+  /* box-shadow: 0 2px 5px -6px var(--text),0 0 30px -50px var(--text); */
+  box-shadow: 0 2px 5px -1px var(--text), 0 0 30px -5px var(--text);
   /* display the halves side by side */
   display: flex;
 }
@@ -497,7 +503,10 @@ this excludes the social icons */
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
 }
-
+.Panel button:hover{
+  box-shadow: 0 2px 5px -1px rgb(255, 255, 255), 0 0 30px -5px rgba(255,255,255);
+  /* box-shadow: 0 2px 5px -1px rgb(255, 255, 255), 0 0 30px -5px var(--text); */
+}
 
 /*
 on smaller viewports position the panel atop one another

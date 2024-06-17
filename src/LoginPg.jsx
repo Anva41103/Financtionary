@@ -1,14 +1,16 @@
 import { Nav } from './Navbar'
-import  LoginB  from  './LoginB'
+import LoginB from './LoginB'
 import { Foot } from './Footer'
 
-export function Login(){
+export function Login() {
 
-    return(
+    return (
         <>
-            <Nav/>
-            <LoginB/>
-            <Foot/>
+            <Nav />
+            <div className='flex justify-center'>
+                <LoginB />
+            </div>
+            <Foot />
         </>
     )
 }
