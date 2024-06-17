@@ -28,9 +28,7 @@ export function Main() {
                     <div>
                         {/* <button className="bg-blue-500 px-3 py-1 rounded-md text-white font-semibold text-lg hover:bg-blue-700 active:bg-blue-800 border-b-blue-900 border-b-4 hover:drop-shadow-lg hover:drop-shadow-blue-500">Join Now</button> */}
 
-                        {/* <div className='join-b'> */}
-                            <button className="join-b px-3 py-1 rounded-md text-white font-semibold text-lg hover:bg-teal-700 active:bg-teal-800 border-b-teal-800 border-b-4 drop-shadow-lg">Join Now</button>
-                        {/* </div> */}
+                       
                     </div>
                 </div>
             </div>
