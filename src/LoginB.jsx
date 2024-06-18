@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const ActionPanel = ({ signIn, slide }) => {
   const heading = signIn ? 'Hello friend!' : 'Welcome back!';
-  const paragraph = signIn ? 'Enter your personal details and start your journey with us' : 'To keep connected with us please login with your personal info';
+  const paragraph = signIn ? 'Enter your details and start your journey' : 'To keep connected with us please login with your info';
   const button = signIn ? 'Sign up!' : 'Sign in!';
 
   return (

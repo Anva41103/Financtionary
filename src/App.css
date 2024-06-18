@@ -128,7 +128,7 @@ html {
 .card p {
     height: 95%;
     flex: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: pointer;
     border-radius: 2px;
     transition: all .5s;
@@ -158,7 +158,9 @@ html {
     transform: rotate(0);
 }
 .bgpic
-{
+{   
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(blogbgpic.jpg);
 }
 .card svg {
@@ -177,6 +179,7 @@ html {
     height: 50px;
     width: 200px;
     margin-left: 100px;
+    padding: 10px;
 }
 
 .card2::before,
@@ -232,13 +235,16 @@ html {
     height: 100%;
     color: whitesmoke;
     font-family: 'Fira Mono', monospace;
-    font-size: 24px;
+    font-size: 24px; 
     font-weight: 700;
     opacity: 1;
     transition: opacity 0.25s;
     z-index: 2;
+     padding:4px;
 }
-
+/* .card2 span div{
+  height: ;
+} */
 .card2 .social-link {
     position: relative;
     display: flex;
@@ -250,6 +256,7 @@ html {
     font-size: 24px;
     text-decoration: none;
     transition: 0.25s;
+    border: 50px;
 }
 
 .card2 .social-link svg {
@@ -282,7 +289,7 @@ html {
 .cardabout {
     position: relative;
     width: 475px;
-    height: 625px;
+    height: auto;
     background-color: #2db3c2;
     border-radius: 6px;
     display: inline-block;
@@ -291,6 +298,7 @@ html {
     overflow: hidden;
     margin-left: 150px;
     margin-top: 200px;
+    margin-bottom: 200px;
     perspective: 1000px;
     box-shadow: 0 0 0 25px #047f8f;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
