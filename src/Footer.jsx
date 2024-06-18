@@ -1,9 +1,9 @@
-
+// write create share invest grow
 export function Foot() {
 
     return (
         <>
-            <footer className="footercol text-white p-5 text-center footer">
+            <footer className="footercol text-white p-5 text-center">
                 <div className="max-w-5xl mx-auto flex flex-wrap justify-between">
 
                     <div className="flex-1 min-w-[200px] m-2">
@@ -20,8 +20,8 @@ export function Foot() {
                     <div className="flex-1 min-w-[200px] m-2">
                         <h3 className="text-lg font-semibold">Quick Links</h3>
                         <ul className="list-none p-0">
-                            <li><a href="#home" className="text-gray-600 font-semibold">Home</a></li>
-                            <li><a href="#about" className="text-gray-600 font-semibold">About Us</a></li>
+                            <li><a href="./Home" className="text-gray-600 font-semibold">Home</a></li>
+                            <li><a href="./About" className="text-gray-600 font-semibold">About Us</a></li>
                             <li><a href="#services" className="text-gray-600 font-semibold">Services</a></li>
                             <li><a href="#contact" className="text-gray-600 font-semibold">Contact</a></li>
                         </ul>
@@ -51,5 +51,3 @@ export function Foot() {
         </>
     )
 }
-
-// write create share invest grow
