@@ -16,6 +16,7 @@
     background: rgb(244, 148, 216);
     background: radial-gradient(circle, rgba(244, 148, 216, 1) 8%, rgba(134, 225, 232, 1) 78%);
     background-image: url(bghome.jpeg);
+    background-size: cover;
     height: 100%;
 
   /* Center and scale the image nicely */
@@ -340,7 +341,7 @@ html {
 
 .cardabout__title {
     margin: 0;
-    font-size: 90px;
+    font-size: 70px;
     color: #047f8f;
     font-weight: 700;
 }
@@ -351,7 +352,7 @@ html {
 
 .cardabout__description {
     margin: 10px 0 0;
-    font-size: 25px;
+    font-size: 20px;
     color: #08898b;
     line-height: 1.4;
 }

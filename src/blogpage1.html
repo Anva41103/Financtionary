@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap"
+        rel="stylesheet">
+    <style>
+        .playwrite-fr-moderne-xyz {
+            font-family: "Playwrite FR Moderne", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        body {
+            background-image: url("blogp1.jpg");
+            background-size: cover;
+        }
+
+        .blogpage {
+            padding: 20px;
+            width: 900px;
+            height: 900px;
+            min-height: 370px;
+            border-radius: 20px;
+            background:rgba(255, 214, 219, 0.033);
+            box-shadow:5px 5px 8px #8ec6c8, -5px -5px 8px #7d9191;
+            transition: 0.4s;
+            align-self: center;
+            margin-left: 300px;
+        }
+
+        .blogpage:hover {
+            translate: 0 -10px;
+        }
+
+        .blogpage-title {
+            font-size: 48px;
+            font-weight: 600;
+            color:rgb(19 109 116);
+            margin: 15px 0 0 10px;
+        }
+
+        .blogpage div {
+            display: inline-block;
+        }
+
+        .blogpage-image {
+            /* height: 350px;
+            width: 500px; */
+            background-color: #313131;
+            border-radius: 15px;
+            background: #313131;
+            box-shadow: inset 5px 5px 3px #2f2f2f,
+                inset -5px -5px 3px #333333;
+        }
+
+        .blogpage-body {
+            margin: 13px 0 0 10px;
+            color:rgb(19 109 116);
+            font-size: 15px;
+        }
+
+        .footer {
+            float: right;
+            margin: 28px 0 0 18px;
+            font-size: 13px;
+            color: #b3b3b3;
+        }
+
+        .by-name {
+            font-weight: 700;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 2px;
+        }
+
+        /* .item
+        {
+            border: 1px solid red;
+        } */
+        .item img {
+            height: 380px;
+            width: 490px;
+            background-size: contain;
+        }
+
+        #myElement:first-letter {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blogpage playwrite-fr-moderne-xyz" >
+        <div id="grid" class="item">
+            <div class="blogpage-image"><img src=".\assets\blogimages\blog1.jpeg" alt=""></div>
+            <div class="blogpage-title">Microfinance: Empowering the Underbanked</div>
+        </div>
+        <p class="blogpage-body" id="myElement">
+            Microfinance is a transformative approach to poverty alleviation and economic development, focusing on
+            providing financial services to low-income individuals and communities traditionally excluded from the
+            formal banking sector. These services include microloans, savings accounts, insurance, and payment systems.
+            Microfinance institutions (MFIs) play a crucial role in this ecosystem, offering small loans to individuals
+            who lack collateral and credit history, enabling them to start or expand small businesses.
+            One of the significant impacts of microfinance is the empowerment of women. In many developing countries,
+            women are the primary beneficiaries of microloans, which they use to engage in entrepreneurial activities,
+            thereby gaining financial independence and a stronger role in their households and communities. Beyond
+            economic benefits, microfinance fosters a culture of savings and financial literacy among the
+            underprivileged, contributing to long-term financial stability and community development.
+            The success stories of microfinance are numerous, from small farmers expanding their agricultural activities
+            to artisans improving their crafts and market reach. Despite challenges such as high-interest rates and the
+            risk of over-indebtedness, the sector continues to evolve, incorporating digital technologies to improve
+            accessibility and efficiency.
+
+        </p>
+        <p class="footer">Written by <span class="by-name">CHATGPT</span> on <span class="date">25/05/23</span></p>
+    </div>
+</body>
+
+</html>
