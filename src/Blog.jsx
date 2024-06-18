@@ -7,7 +7,7 @@ export function Blog() {
     return (
         <>
             <div className='bgpic'>
-                <Nav />
+                <Nav/>
                 <BHead />
                 <Foot className='sticky'/>
             </div>

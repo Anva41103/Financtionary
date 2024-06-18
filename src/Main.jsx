@@ -8,6 +8,11 @@ import { Home } from './HomePage'
 import { About } from './About'
 import { Login } from './LoginPg'
 import { Blog } from "./Blog"
+import { BlogP1 } from "./BlogPg1"
+import { BlogP2 } from "./BlogPg2"
+import { BlogP3 } from "./BlogPg3"
+import { BlogP4 } from "./BlogPg4"
+import { BlogP5 } from "./BlogPg5"
 
 const router = createBrowserRouter([
   {
@@ -33,6 +38,26 @@ const router = createBrowserRouter([
       {
         path:'/Login',
         element: <Login/>
+      },
+      {
+        path:'/BlogP1',
+        element: <BlogP1/>
+      },
+      {
+        path:'/BlogP2',
+        element: <BlogP2/>
+      },
+      {
+        path:'/BlogP5',
+        element: <BlogP5/>
+      },
+      {
+        path:'/BlogP3',
+        element: <BlogP3/>
+      },
+      {
+        path:'/BlogP4',
+        element: <BlogP4/>
       },
     ]
   }
