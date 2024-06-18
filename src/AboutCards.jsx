@@ -4,18 +4,16 @@ export function Card() {
 
     return (
         <>
-        <div className="cardabout">
-        <img src=".\src\assets\aboutpics\aatmika.jpg" alt=""/>
-        <div className="cardabout__content">
-            <p className="cardabout__title">Aatmika Gangeley</p>
-            <p className="cardabout__description">Motivated and passionate Programmer. Confident orator, and occasional content writer. I am an 
-enthusiastic learner, keen to expand my horizons in the professional realm and simultaneously 
-looking forward to embrace challenges as opportunities for personal development.
-            </p>
-            <div className="card2">
-                <span>Social</span>
-                <a className="social-link" href="#">
-                    {/* <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <div className="cardabout">
+                <img src=".\src\assets\aboutpics\aatmika.jpg" alt="" />
+                <div className="cardabout__content">
+                    <p className="cardabout__title">Aatmika Gangeley</p>
+                    <p className="cardabout__description">Motivated and passionate Programmer. Confident orator, and occasional content writer. I am an enthusiastic learner, keen to expand my horizons in the professional realm and simultaneously looking forward to embrace challenges as opportunities for personal development.
+                    </p>
+                    <div className="card2">
+                        <span>Social</span>
+                        <a className="social-link" href="#">
+                            {/* <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 461.001 461.001" xml:space="preserve"
                         fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -28,9 +26,9 @@ looking forward to embrace challenges as opportunities for personal development
                             </g>
                         </g>
                     </svg> */}
-                </a>
-                <a className="social-link" href="#">
-                    {/* <svg fill="#000000" viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg">
+                        </a>
+                        <a className="social-link" href="#">
+                            {/* <svg fill="#000000" viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -39,9 +37,9 @@ looking forward to embrace challenges as opportunities for personal development
                             </path>
                         </g>
                     </svg> */}
-                </a>
-                <a className="social-link" href="#">
-                    {/* <svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        </a>
+                        <a className="social-link" href="#">
+                            {/* <svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -53,9 +51,9 @@ looking forward to embrace challenges as opportunities for personal development
                             </g>
                         </g>
                     </svg> */}
-                </a>
-                <a className="social-link" href="#">
-                    {/* <svg fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" className="icon">
+                        </a>
+                        <a className="social-link" href="#">
+                            {/* <svg fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" className="icon">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -64,24 +62,24 @@ looking forward to embrace challenges as opportunities for personal development
                             </path>
                         </g>
                     </svg> */}
-                </a>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div className="cardabout">
-        <img src=".\src\assets\aboutpics\minee.jpg" alt=""/>
-        <div className="cardabout__content">
-            <p className="cardabout__title">Ananya Srivastava</p>
-            <p className="cardabout__description">An extroverted, enthusiastic, and creative CSE undergraduate with a strong
-                passion for problem-solving and teamwork. Adept at analyzing and solving complex problems, with a proven
-                track record in competitive coding. Currently seeking opportunities to leverage my skills in web
-                development because I find it very interesting to encounter problems while working on projects and then
-                overcoming them. Fluent in multiple programming languages and committed to continuous learning.
-            </p>
-            <div className="card2">
-                <span>Social</span>
-                <a className="social-link" href="#">
-                    {/* <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <div className="cardabout">
+                <img src=".\src\assets\aboutpics\minee.jpg" alt="" />
+                <div className="cardabout__content">
+                    <p className="cardabout__title">Ananya Srivastava</p>
+                    <p className="cardabout__description">An extroverted, enthusiastic, and creative CSE undergraduate with a strong
+                        passion for problem-solving and teamwork. Adept at analyzing and solving complex problems, with a proven
+                        track record in competitive coding. Currently seeking opportunities to leverage my skills in web
+                        development because I find it very interesting to encounter problems while working on projects and then
+                        overcoming them. Fluent in multiple programming languages and committed to continuous learning.
+                    </p>
+                    <div className="card2">
+                        <span>Social</span>
+                        <a className="social-link" href="#">
+                            {/* <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 461.001 461.001" xml:space="preserve"
                         fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -94,9 +92,9 @@ looking forward to embrace challenges as opportunities for personal development
                             </g>
                         </g>
                     </svg> */}
-                </a>
-                <a className="social-link" href="#">
-                    {/* <svg fill="#000000" viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg">
+                        </a>
+                        <a className="social-link" href="#">
+                            {/* <svg fill="#000000" viewBox="0 0 512 512" id="icons" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -105,9 +103,9 @@ looking forward to embrace challenges as opportunities for personal development
                             </path>
                         </g>
                     </svg> */}
-                </a>
-                <a className="social-link" href="#">
-                    {/* <svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        </a>
+                        <a className="social-link" href="#">
+                            {/* <svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -119,9 +117,9 @@ looking forward to embrace challenges as opportunities for personal development
                             </g>
                         </g>
                     </svg> */}
-                </a>
-                <a className="social-link" href="#">
-                    {/* <svg fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" className="icon">
+                        </a>
+                        <a className="social-link" href="#">
+                            {/* <svg fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" className="icon">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -130,10 +128,10 @@ looking forward to embrace challenges as opportunities for personal development
                             </path>
                         </g>
                     </svg> */}
-                </a>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
         </>
     )

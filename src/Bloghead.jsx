@@ -4,7 +4,7 @@ export function BHead() {
 
     return (
         <>
-            <div className="bgpic">
+            <div className="mt-24">
             <div class="card">
                 <p><span>Microfinance: Empowering the Underbanked</span></p>
                 <p><span>Mutual Funds: Diversified Investment for All</span></p>

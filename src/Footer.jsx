@@ -3,7 +3,7 @@ export function Foot() {
 
     return (
         <>
-            <footer className="footercol text-white p-5 text-center">
+            <footer className="footercol text-white p-5 text-center footer">
                 <div className="max-w-5xl mx-auto flex flex-wrap justify-between">
 
                     <div className="flex-1 min-w-[200px] m-2">
@@ -32,8 +32,8 @@ export function Foot() {
                         <a href="https://www.facebook.com" target="_blank" className="text-gray-400 mr-2">
                             <img src="./src/assets/social-media/facebook.png" alt="Facebook" className="w-10 h-10 inline-block" />
                         </a>
-                        <a href="https://www.twitter.com" target="_blank" className="text-gray-400 mr-2">
-                            <img src="./src/assets/social-media/twitter.png" alt="Twitter" className="w-10 h-10 inline-block" />
+                        <a href="https://www.twitter.com" target="_blank" className="text-gray-400 mr-0 -ml-3">
+                            <img src="./src/assets/social-media/twitter.png" alt="Twitter" className="w-14 h-14 inline-block" />
                         </a>
                         <a href="https://www.instagram.com" target="_blank" className="text-gray-400 mr-2">
                             <img src="./src/assets/social-media/instagram.png" alt="Instagram" className="w-10 h-10 inline-block" />

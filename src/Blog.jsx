@@ -2,13 +2,15 @@ import { Nav } from './Navbar'
 import { BHead } from './Bloghead'
 import { Foot } from './Footer'
 
-export function Blog(){
+export function Blog() {
 
-    return(
+    return (
         <>
-            <Nav/>
-            <BHead/>
-            <Foot/>
+            <div className='bgpic'>
+                <Nav />
+                <BHead />
+                <Foot />
+            </div>
         </>
     )
 }

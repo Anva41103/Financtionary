@@ -157,7 +157,9 @@ html {
     transform: rotate(0);
 }
 .bgpic
-{
+{   
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(blogbgpic.jpg);
 }
 .card svg {
@@ -249,6 +251,7 @@ html {
     font-size: 24px;
     text-decoration: none;
     transition: 0.25s;
+    border: 50px;
 }
 
 .card2 .social-link svg {
@@ -290,6 +293,7 @@ html {
     overflow: hidden;
     margin-left: 150px;
     margin-top: 200px;
+    margin-bottom: 200px;
     perspective: 1000px;
     box-shadow: 0 0 0 25px #047f8f;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
