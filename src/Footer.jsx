@@ -1,4 +1,3 @@
-// write create share invest grow
 export function Foot() {
 
     return (

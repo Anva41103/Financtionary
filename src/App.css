@@ -30,6 +30,28 @@
   background: rgba(18, 194, 206, 0.77) 78%;
 }
 
+.txtmain {
+  font-size: 40px;
+  color: #333;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border: 2px solid #0788869c;
+  border-radius: 5px;
+  /* background-color: #e7f3ff; */
+  background-color: transparent;
+  /* background  ; */
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  backdrop-filter: blur(15px);
+  color: rgb(255, 255, 255);
+  width: auto;
+  box-shadow: 0px 0px 30px rgba(20, 161, 126, 0.459);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .join-b {
   /* position: absolute; */
   top: 0;
@@ -166,7 +188,7 @@ html {
 .bgpic {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(blogbgpic.jpg);
+  background-image: url('./assets/blogbg/bgimg.jpeg');
 }
 
 .card svg {
@@ -441,6 +463,14 @@ this softens the color of the shapes, but most prominently shows the shapes as i
   display: inline-block;
 }
 
+.aboutbg {
+  background-image: url('./assets/aboutpics/aboutbg.jpeg');
+}
+
+.loginbg {
+  background-image: url('./assets/loginbg.jpeg');
+}
+
 .blogpage-image {
   /* height: 350px;
   width: 500px; */
@@ -468,7 +498,7 @@ this softens the color of the shapes, but most prominently shows the shapes as i
 }
 
 .blgpg3 {
-  background-image: url("./assets/blogbg/blogp3.jpg");
+  background-image: url("./assets/blogbg/blogp3.jpeg");
   background-size: cover;
 }
 
@@ -515,13 +545,15 @@ this softens the color of the shapes, but most prominently shows the shapes as i
 
 .App {
   /* cap the width of the main panel */
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   margin-top: 100px;
   margin-bottom: 100px;
   max-width: 800px;
   width: 90vw;
   /* minimum height to avoid a change in size with one additional input element */
   min-height: 600px;
-  background: var(--theme-two);
+  /* background: var(--theme-two); */
   border-radius: 20px;
   /* box-shadow: 0 2px 5px -6px var(--text),0 0 30px -50px var(--text); */
   box-shadow: 0 2px 5px -1px var(--text), 0 0 30px -5px var(--text);
@@ -541,7 +573,7 @@ display the content in a single column layout
   position: relative;
   /* ooverflow hidden to avoid janky horizontal scroll as the child elements are transitioned into view */
   overflow-x: hidden;
-
+  background-color: white;
 }
 
 /* styles shared by the halves' elements */
@@ -556,7 +588,7 @@ display the content in a single column layout
   max-width: 25ch;
   font-size: 0.95rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -568,6 +600,7 @@ display the content in a single column layout
 
 .Panel a {
   text-decoration: none;
+  /* font-weight; */
   margin: 1rem 1rem;
 }
 
@@ -630,12 +663,13 @@ this excludes the social icons */
 /* style the buttons to sign in/sign up to have considerable white space _around_ the text */
 .Panel button {
   background: none;
-  border: 1px solid currentColor;
+  border: 2px solid currentColor;
   border-radius: 50px;
   padding: 0.85rem 2.75rem;
   margin: 2rem 0;
   text-transform: uppercase;
   font-size: 0.8rem;
+  font-weight: 600;
   letter-spacing: 0.1rem;
 }
 
@@ -667,6 +701,7 @@ expand the main panel to cover the entirety of the viewport
 /* expand the first half to cover twice the space of the second half */
 .FormPanel {
   flex-grow: 2;
+  /* background-color: transparent; */
   /* remove the border radius for the corners matching the container */
   border-radius: inherit;
   border-top-right-radius: 0;
@@ -675,6 +710,8 @@ expand the main panel to cover the entirety of the viewport
 
 .FormPanel button {
   background: var(--theme);
+  background-color: #46d5bb;
+  /* font-weight: ; */
   color: var(--theme-two);
 }
 
@@ -690,7 +727,8 @@ on smaller viewports remove the border radius
 
 .ActionPanel {
   /* background and color using the theme */
-  background: var(--theme);
+  /* background: var(--theme); */
+  background-color: transparent;
   color: var(--theme-two);
   padding: 2rem;
   flex-grow: 1;
@@ -706,5 +744,6 @@ on smaller viewports remove the border radius
 @media (max-width: 650px) {
   .ActionPanel {
     border-radius: 0;
+
   }
 }

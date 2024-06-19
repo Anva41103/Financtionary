@@ -5,12 +5,12 @@ import { Foot } from './Footer'
 export function Login() {
 
     return (
-        <>
+        <div className='loginbg'>
             <Nav />
-            <div className='flex justify-center'>
+            <div className='flex justify-center bg-transparent'>
                 <LoginB />
             </div>
             <Foot />
-        </>
+        </div>
     )
 }
