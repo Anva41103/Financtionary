@@ -15,7 +15,7 @@ export function Nav() {
                         <Link to="/Login"><button className="m-2 px-4 h-11 rounded-full navbutton">Login</button></Link>
                     </div>
                     <div className="flex flex-row gap-10 mx-4 justify-between">
-                        <button className="active:scale-95 m-2 px-4 py-1 h-11 rounded-md text-black font-semibold text-sm sm:text-base button_wotd">WOTD</button>
+                    <Link to="/Wotd"><button className="active:scale-95 m-2 px-4 py-1 h-11 rounded-md text-black font-semibold text-sm sm:text-base button_wotd">WOTD</button></Link>
                     </div>
                 </div>
             </div>
