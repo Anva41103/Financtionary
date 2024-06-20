@@ -2,11 +2,11 @@ export function Foot() {
 
     return (
         <>
-            <footer className="footercol text-white p-5 text-center">
+            <footer className="footercol text-white p-5 text-center h-60">
                 <div className="max-w-5xl mx-auto flex flex-wrap justify-between">
 
                     <div className="flex-1 min-w-[200px] m-2">
-                        <img className="-ml-24 rounded-full" src="./src/assets/logo.jpeg"/>
+                        <img className="-ml-24 rounded-full h-36" src="./src/assets/logo.jpeg"/>
                     </div>
 
                     <div className="flex-1 min-w-[200px] m-2 text-left">
