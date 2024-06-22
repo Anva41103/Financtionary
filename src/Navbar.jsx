@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-
+import  WordOfTheDay from "./WordOfTheDay"
 export function Nav() {
 
     return (
@@ -14,20 +14,16 @@ export function Nav() {
                         <Link to="/About"><button className="m-2 px-4 h-11 rounded-full navbutton">About Us</button></Link>
                         <Link to="/Login"><button className="m-2 px-4 h-11 rounded-full navbutton">Login</button></Link>
                     </div>
-<<<<<<< HEAD
-                    <div className="switch-container">
-                        <button className="btn">
+                    {/* <div className="switch-container">
+                        <button className="btn" id="toggleButton">
                             <span className="btn-text-one">WOTD</span>
-                            <span className="btn-text-two">Liquidity Ratio </span>
+                            <span className="btn-text-two"><h3 id="wordTitle">{WordOfTheDay.word}</h3></span>
                         </button>
-                        <div className="switch-content">
-                            A financial metric used to determine a company's ability to pay off its short-term debts obligations. Common liquidity ratios include the current ratio and quick ratio, which compare a company's liquid assets to its short-term liabilities.
+                        <div className="switch-content" id="meaningContent">
+                            <p id="wordMeaning"> {WordOfTheDay.meaning}</p>
                         </div>
-=======
-                    <div className="flex flex-row gap-10 mx-4 justify-between">
-                    <Link to="/Wotd"><button className="active:scale-95 m-2 px-4 py-1 h-11 rounded-md text-black font-semibold text-sm sm:text-base button_wotd">WOTD</button></Link>
->>>>>>> 4972211f488784ab9a72502e9a89e67188d2292f
-                    </div>
+                    </div> */}
+                    <WordOfTheDay></WordOfTheDay>
                 </div>
             </div>
         </>

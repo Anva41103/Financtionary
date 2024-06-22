@@ -3,8 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
+
+/* .playfair-display-dict {
+  
+} */
+      body
+      {
+        background-image: url("bgdict.png");
+        font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+      }
+        .card-container {
+            display: flex;
+            gap: 20px; /* Optional: Adds space between the cards */
+        }
+        h1{
+          color: #096170;
+          font-size: 50px;
+          text-decoration:double;
+          text-shadow: 1px 1px #2c9caf;
+        }
+
         .card {
             position: relative;
             width: 250px;
@@ -19,7 +45,7 @@
         .background {
             position: absolute;
             inset: 0;
-            background: rgb(3, 165, 187);
+            background: linear-gradient(to top, #096170, #2c9caf, #28c4e0);
         }
 
         .logo {
@@ -28,6 +54,9 @@
             bottom: 50%;
             transform: translate(50%, 50%);
             transition: all 0.6s ease-in-out;
+            font-size: 30px;
+            color: #ff8c8c;
+            text-shadow: 1px 1px black;
         }
 
         .logo .logo-svg {
@@ -38,10 +67,11 @@
 
         .icon {
             display: inline-block;
-            /* width: 20px;
-            height: 20px; */
             text-align: left;
             z-index: 1;
+            font-size: 15px;
+            color: #096170;
+            /* text-shadow: 1px 1px black; */
         }
 
         .icon .svg {
@@ -65,7 +95,6 @@
 
         .box::before {
             content: "";
-            /* position: absolute; */
             inset: 0;
             border-radius: inherit;
             opacity: 0;
@@ -81,70 +110,21 @@
             height: 70%;
             bottom: -70%;
             left: -70%;
-            background: #e18b8b;
+            background: linear-gradient(to top,#dba6a6, #f98989, #f97d7d);
         }
 
         .box1::before {
-            background: #e18b8b;
+            background:linear-gradient(to top,#dba6a6, #f98989, #f97d7d);
         }
 
         .box1:hover::before {
-            opacity:1;
+            opacity: 1;
         }
 
         .box1:hover .icon .svg {
             filter: drop-shadow(0 0 5px white);
             display: inline;
             z-index: -1;
-        }
-
-        .box2 {
-            width: 50%;
-            height: 50%;
-            bottom: -50%;
-            left: -50%;
-            transition-delay: 0.2s;
-            display: none;
-        }
-
-        .box2::before {
-            background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
-        }
-
-        .box2:hover::before {
-            opacity: 1;
-        }
-
-        .box2:hover .icon .svg {
-            filter: drop-shadow(0 0 5px white);
-        }
-
-        .box3 {
-            width: 30%;
-            height: 30%;
-            bottom: -30%;
-            left: -30%;
-            transition-delay: 0.4s;
-        }
-
-        .box3::before {
-            background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
-        }
-
-        .box3:hover::before {
-            opacity: 1;
-        }
-
-        .box3:hover .icon .svg {
-            filter: drop-shadow(0 0 5px white);
-        }
-
-        .box4 {
-            width: 10%;
-            height: 10%;
-            bottom: -10%;
-            left: -10%;
-            transition-delay: 0.6s;
         }
 
         .card:hover {
@@ -161,21 +141,283 @@
             bottom: 20px;
             right: 20px;
         }
-
-        .card:hover .box2 {
-            display: block;
-        }
-
     </style>
 </head>
 <body>
-    <div class="card">
+  <h1>A</h1>
+    <div class="card-container">
+      <div class="card">
+          <div>
+              <div class="background"></div>
+              <div class="logo">Amortization</div>
+              <div class="box box1"><span class="icon">The spreading out of capital expenses for intangible assets over a specific duration.</span></div>
+          </div>
+      </div>
+      <div class="card">
+          <div>
+              <div class="background"></div>
+              <div class="logo">Angel Investor</div>
+              <div class="box box1"><span class="icon">An affluent individual who provides capital for a business start-up, usually in exchange for convertible debt or ownership equity.</span></div>
+          </div>
+      </div>
+      <div class="card">
+        <div>
+            <div class="background"></div>
+            <div class="logo">Annuity</div>
+            <div class="box box1"><span class="icon">A financial product that pays out a fixed stream of payments to an individual, primarily used as an income stream for retirees.</span></div>
+        </div>
+    </div><div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Arbitrage</div>
+          <div class="box box1"><span class="icon">The simultaneous purchase and sale of an asset to profit from an imbalance in the price.</span></div>
+      </div>
+  </div><div class="card">
+    <div>
         <div class="background"></div>
-        <div class="logo">word</div>
-        <div class="box box1"><span class="icon">Meaning 1bcckjsdbcbdsckbgdsjch ,mbchdskcbs, snmhc vghdvc sd,mc .sdkbc hjvds c.z,sn c,.dkjbc dksc zds,n z</span></div>
-        <!-- <div class="box box2"><span class="icon">meaning</span></div>
-        <div class="box box3"><span class="icon">Meaning 3</span></div> -->
-        <!-- <div class="box box4"></div> -->
+        <div class="logo">Asset</div>
+        <div class="box box1"><span class="icon">Anything owned by an individual or entity that has economic value.</span></div>
+       
     </div>
+</div><div class="card">
+  <div>
+      <div class="background"></div>
+      <div class="logo">Audit</div>
+      <div class="box box1"><span class="icon">An official inspection of an individual's or organization's accounts, typically by an independent body.</span></div>
+  </div>
+</div>
+  </div>
+  <hr>
+  <H1>B</H1>
+  <div class="card-container">
+      <div class="card">
+          <div>
+              <div class="background"></div>
+              <div class="logo">Balance Sheet</div>
+              <div class="box box1"><span class="icon">A financial statement that reports a company's assets, liabilities, and shareholders' equity at a specific point in time.</span></div>
+          </div>
+      </div>
+      <div class="card">
+          <div>
+              <div class="background"></div>
+              <div class="logo">Bear Market</div>
+              <div class="box box1"><span class="icon">A market condition where prices are falling or expected to fall.</span></div>
+          </div>
+      </div>
+      <div class="card">
+        <div>
+            <div class="background"></div>
+            <div class="logo">Blue Chip Stocks</div>
+            <div class="box box1"><span class="icon">Shares in large, well-known companies with a solid history of financial performance.</span></div>
+        </div>
+    </div><div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Bond</div>
+          <div class="box box1"><span class="icon">A fixed-income instrument representing a loan made by an investor to a borrower.</span></div>
+      </div>
+  </div><div class="card">
+    <div>
+        <div class="background"></div>
+        <div class="logo">Budget</div>
+        <div class="box box1"><span class="icon">An estimate of income and expenditure for a set period.</span></div>
+       
+    </div>
+</div><div class="card">
+  <div>
+      <div class="background"></div>
+      <div class="logo">Bull Market</div>
+      <div class="box box1"><span class="icon">A market condition where prices are rising or expected to rise.</span></div>
+  </div>
+</div>
+  </div>
+  <hr>
+  <h1>C</h1>
+  <div class="card-container">
+    <div class="card">
+        <div>
+            <div class="background"></div>
+            <div class="logo">Capital</div>
+            <div class="box box1"><span class="icon">Financial assets or the financial value of assets, such as funds held in deposit accounts.</span></div>
+        </div>
+    </div>
+    <div class="card">
+        <div>
+            <div class="background"></div>
+            <div class="logo">Capital Gain</div>
+            <div class="box box1"><span class="icon">The profit from the sale of an asset or investment.</span></div>
+        </div>
+    </div>
+    <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Cash Flow Statement</div>
+          <div class="box box1"><span class="icon"> A financial statement that shows how changes in balance sheet accounts and income affect cash and cash equivalents.</span></div>
+      </div>
+  </div><div class="card">
+    <div>
+        <div class="background"></div>
+        <div class="logo">Credit</div>
+        <div class="box box1"><span class="icon">An agreement where a borrower receives something of value now and agrees to repay the lender at a later date.</span></div>
+       
+    </div>
+</div><div class="card">
+  <div>
+      <div class="background"></div>
+      <div class="logo">Credit Default Swap (CDS)</div>
+      <div class="box box1"><span class="icon">A financial derivative that allows an investor to swap or offset their credit risk with that of another investor.</span></div>
+  </div>
+</div><div class="card">
+<div>
+    <div class="background"></div>
+    <div class="logo">Credit Rating</div>
+    <div class="box box1"><span class="icon">An assessment of the creditworthiness of a borrower in general terms or with respect to a particular debt or financial obligation.</span></div>
+</div>
+</div>
+</div>
+<hr>
+<div class="card-container">
+  <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Credit Score</div>
+          <div class="box box1"><span class="icon">A numerical expression based on a level analysis of a person's credit files to represent the creditworthiness of an individual.</span></div>
+      </div>
+  </div>
+  <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Custodian</div>
+          <div class="box box1"><span class="icon">A financial institution that holds customers' securities for safekeeping to prevent them from being stolen or lost.</span></div>
+      </div>
+  </div>
+  
+</div>
+<hr>
+<h1>D</h1>
+<div class="card-container">
+  <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Debit</div>
+          <div class="box box1"><span class="icon">An accounting entry that results in either an increase in assets or a decrease in liabilities on a company's balance sheet.</span></div>
+      </div>
+  </div>
+  <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Deflation</div>
+          <div class="box box1"><span class="icon">The reduction of the general level of prices in an economy.</span></div>
+      </div>
+  </div>
+  <div class="card">
+    <div>
+        <div class="background"></div>
+        <div class="logo">Depreciation</div>
+        <div class="box box1"><span class="icon">The reduction in the value of an asset over time, particularly in regards to tangible assets.</span></div>
+       
+    </div>
+</div><div class="card">
+  <div>
+      <div class="background"></div>
+      <div class="logo">Derivatives</div>
+      <div class="box box1"><span class="icon">Financial contracts whose value is derived from the value of an underlying asset.</span></div>
+  </div>
+</div><div class="card">
+<div>
+    <div class="background"></div>
+    <div class="logo">Diversification</div>
+    <div class="box box1"><span class="icon">The strategy of spreading investments across various financial instruments to reduce risk.</span></div>
+</div>
+</div><div class="card">
+<div>
+  <div class="background"></div>
+  <div class="logo">Dividend</div>
+  <div class="box box1"><span class="icon">A portion of a company's earnings distributed to shareholders.</span></div>
+</div>
+</div>
+</div>
+<hr>
+<h1>E</h1>
+<div class="card-container">
+  <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Emerging Markets</div>
+          <div class="box box1"><span class="icon">Nations with social or business activities in the process of rapid growth and industrialization.</span></div>
+      </div>
+  </div>
+  <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Endowment</div>
+          <div class="box box1"><span class="icon">A financial asset, in the form of a donation made to a non-profit group or institution.</span></div>
+      </div>
+  </div>
+  <div class="card">
+    <div>
+        <div class="background"></div>
+        <div class="logo">Equity</div>
+        <div class="box box1"><span class="icon">The ownership interest in an asset or business, calculated as the difference between assets and liabilities.</span></div>
+       
+    </div>
+</div><div class="card">
+  <div>
+      <div class="background"></div>
+      <div class="logo">Exchange-Traded Fund (ETF)</div>
+      <div class="box box1"><span class="icon">A type of investment fund traded on stock exchanges, much like stocks.</span></div>
+  </div>
+</div><div class="card">
+<div>
+    <div class="background"></div>
+    <div class="logo">Expense</div>
+    <div class="box box1"><span class="icon">The economic costs a business incurs through its operations to earn revenue.</span></div>
+</div>
+</div>
+</div>
+<hr>
+<h1>F</h1>
+<div class="card-container">
+  <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Futures</div>
+          <div class="box box1"><span class="icon">Financial contracts obligating the buyer to purchase an asset or the seller to sell an asset at a predetermined future date and price.</span></div>
+      </div>
+  </div>
+  <div class="card">
+    <div>
+        <div class="background"></div>
+        <div class="logo">Financial Engineering</div>
+        <div class="box box1"><span class="icon">The use of mathematical techniques to solve financial problems or create financial products.</span></div>
+       
+    </div>
+</div><div class="card">
+  <div>
+      <div class="background"></div>
+      <div class="logo">Financial Statement</div>
+      <div class="box box1"><span class="icon">A formal record of the financial activities and position of a business, person, or entity.</span></div>
+  </div>
+</div><div class="card">
+<div>
+    <div class="background"></div>
+    <div class="logo">Fiscal Policy</div>
+    <div class="box box1"><span class="icon">Government policies regarding taxation and spending to influence the economy.</span></div>
+</div>
+</div>
+</div>
+<hr>
+<h1>G</h1>
+<div class="card-container">
+  <div class="card">
+      <div>
+          <div class="background"></div>
+          <div class="logo">Gross Domestic Product (GDP)</div>
+          <div class="box box1"><span class="icon">The total value of all goods and services produced in a country over a specific time period.</span></div>
+      </div>
+  </div>
+</div>
+<hr>
 </body>
 </html>
+ 
