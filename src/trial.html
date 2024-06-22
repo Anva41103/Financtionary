@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Display Content</title>
+    <style>
+        .btn {
+  width: 140px;
+  height: 50px;
+  background: #2c9caf linear-gradient(to top, #096170, #2c9caf, #28c4e0); 
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+}
+
+        .switch-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+            
+        }
+        .switch-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #075465;
+            background-color: rgb(213, 141, 141);
+            z-index: 1;
+        }
+
+        .switch-container:hover .switch-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="switch-container">
+        <button class="btn">
+            <span class="btn-text-one">WOTD</span>
+            <span class="btn-text-two">Liquidity Ratio </span>
+        </button>
+        <div class="switch-content">
+            A financial metric used to determine a company's ability to pay off its short-term debts obligations. Common liquidity ratios include the current ratio and quick ratio, which compare a company's liquid assets to its short-term liabilities.
+        </div>
+    </div>
+</body>
+</html>
