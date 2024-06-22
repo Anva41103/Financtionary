@@ -10,7 +10,7 @@ export function BHead() {
     return (
         <>
             <div className="mt-24">
-                <div class="card">
+                <div class="cardblog">
                     <Link to="/BlogP1"><p><span>Microfinance: Empowering the Underbanked</span></p></Link>
                     <Link to="/BlogP2"><p><span>Mutual Funds: Diversified Investment for All</span></p></Link>
                     <Link to="/BlogP3"><p><span>MSME Sector in India: The Backbone of the Economy</span></p></Link>

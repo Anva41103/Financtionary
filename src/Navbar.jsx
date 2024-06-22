@@ -10,7 +10,7 @@ export function Nav() {
                         <img className="h-12 m-2 w-12 rounded-full" src="./src/assets/logo.jpeg" alt="" />
                         <Link to="/Home"><button className="m-2 h-11 rounded-full navbutton">Home</button></Link>
                         <Link to="/Blog"><button className="m-2 px-4 h-11 rounded-full navbutton">Blog</button></Link>
-                        <button className="m-2 px-4 h-11 rounded-full navbutton">Dictionary</button>
+                        <Link to="/Dict"><button className="m-2 px-4 h-11 rounded-full navbutton">Dictionary</button></Link>
                         <Link to="/About"><button className="m-2 px-4 h-11 rounded-full navbutton">About Us</button></Link>
                         <Link to="/Login"><button className="m-2 px-4 h-11 rounded-full navbutton">Login</button></Link>
                     </div>
