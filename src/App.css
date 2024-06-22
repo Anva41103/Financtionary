@@ -12,10 +12,11 @@
   box-shadow: 0px 0px 30px rgba(44, 60, 209, 0.37);
   border: 2px solid rgba(255, 255, 255, 0.18);
 }
+
 .btn {
   width: 140px;
   height: 50px;
-  background: #2c9caf linear-gradient(to top, #096170, #2c9caf, #28c4e0); 
+  background: #2c9caf linear-gradient(to top, #096170, #2c9caf, #28c4e0);
   color: #fff;
   border-radius: 50px;
   border: none;
@@ -57,27 +58,29 @@
   top: 50%;
 }
 
-        .switch-container {
-            position: relative;
-            display: inline-block;
-            margin: 20px;
-            
-        }
-        .switch-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            margin-top: 10px;
-            padding: 10px;
-            border: 1px solid #075465;
-            background-color: rgb(213, 141, 141);
-            z-index: 1;
-        }
+.switch-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
 
-        .switch-container:hover .switch-content {
-            display: block;
-        }
+}
+
+.switch-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #075465;
+  background-color: rgb(213, 141, 141);
+  z-index: 1;
+}
+
+.switch-container:hover .switch-content {
+  display: block;
+}
+
 .bggrad {
   background: rgb(244, 148, 216);
   background: radial-gradient(circle, rgba(244, 148, 216, 1) 8%, rgba(134, 225, 232, 1) 78%);
@@ -132,6 +135,46 @@
   /* Blur effect */
   /* pointer-events: none; */
   /* Allows interactions with elements behind it */
+}
+
+.outer-container {
+  display: flex;
+  background-color: pink;
+  /* flex-direction: column; */
+  /* or row depending on your layout needs */
+  align-items: center;
+  /* to center the items horizontally */
+  justify-content: center;
+  /* to center the items vertically */
+  height: 300px;
+  /* or any height constraint you need */
+  width: 100%;
+  /* or any width constraint you need */
+  box-sizing: border-box;
+  /* ensure padding and border are included in the element's total width and height */
+}
+
+.text-container,
+.blog-container {
+  max-width: 100%;
+  /* prevent stretching beyond the container width */
+  max-height: 100%;
+  /* prevent stretching beyond the container height */
+  margin: 10px;
+  /* optional: space between elements */
+  padding: 10px;
+  /* optional: inner padding */
+  box-sizing: border-box;
+  /* ensure padding and border are included in the element's total width and height */
+}
+
+.text-container {
+  margin-left: 150px;
+  /* additional styles for the text container */
+}
+
+.blog-container {
+  /* additional styles for the blog container */
 }
 
 .footer1 {
