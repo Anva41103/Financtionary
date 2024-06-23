@@ -75,6 +75,51 @@ const words = [
 ];
 
 // Function to get today's date in YYYY-MM-DD format
+// function getFormattedDate() {
+//     const today = new Date();
+//     const year = today.getFullYear();
+//     let month = today.getMonth() + 1;
+//     let day = today.getDate();
+
+//     // Pad single digit months and days with a leading zero
+//     if (month < 10) {
+//         month = '0' + month;
+//     }
+//     if (day < 10) {
+//         day = '0' + day;
+//     }
+
+//     return `${year}-${month}-${day}`;
+// }
+
+// // Function to select a word based on the current date
+// function selectWordOfTheDay() {
+//     const formattedDate = getFormattedDate();
+//     // Use the date to determine the index of the word (you can modify this logic as needed)
+//     const index = formattedDate.length % words.length;
+//     return words[index];
+// }
+
+// const WordOfTheDay = () => {
+//     const [wordOfTheDay, setWordOfTheDay] = useState(selectWordOfTheDay());
+//     const [showMeaning, setShowMeaning] = useState(false);
+
+//     useEffect(() => {
+//         // Update the word of the day every 24 hours
+//         const intervalId = setInterval(() => {
+//             setWordOfTheDay(selectWordOfTheDay());
+//         }, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
+
+//         return () => clearInterval(intervalId); // Clean up interval on component unmount
+//     }, []);
+
+//     const toggleContent = () => {
+//         setShowMeaning(!showMeaning);
+//         if (!showMeaning) {
+//             setWordOfTheDay(selectWordOfTheDay());
+//         }
+//     };
+
 function getFormattedDate() {
     const today = new Date();
     const year = today.getFullYear();
@@ -95,8 +140,8 @@ function getFormattedDate() {
 // Function to select a word based on the current date
 function selectWordOfTheDay() {
     const formattedDate = getFormattedDate();
-    // Use the date to determine the index of the word (you can modify this logic as needed)
-    const index = formattedDate.length % words.length;
+    // Use the date to determine the index of the word
+    const index = new Date().getDate() % words.length;
     return words[index];
 }
 
@@ -105,26 +150,33 @@ const WordOfTheDay = () => {
     const [showMeaning, setShowMeaning] = useState(false);
 
     useEffect(() => {
-        // Update the word of the day every 24 hours
-        const intervalId = setInterval(() => {
-            setWordOfTheDay(selectWordOfTheDay());
-        }, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
+        // Update the word of the day at midnight
+        const now = new Date();
+        const midnight = new Date();
+        midnight.setHours(24, 0, 0, 0);
 
-        return () => clearInterval(intervalId); // Clean up interval on component unmount
-    }, []);
+        const timeToMidnight = midnight.getTime() - now.getTime();
+
+        const intervalId = setTimeout(() => {
+            setWordOfTheDay(selectWordOfTheDay());
+        }, timeToMidnight);
+
+        return () => clearTimeout(intervalId); // Clean up timeout on component unmount
+    }, [wordOfTheDay]);
 
     const toggleContent = () => {
         setShowMeaning(!showMeaning);
-        if (!showMeaning) {
-            setWordOfTheDay(selectWordOfTheDay());
-        }
     };
 
+
     return (
+        // <>
+        // {WordOfTheDay}
+        // </>
         <div className="switch-container">
-            <button className="btn" id="toggleButton" onClick={toggleContent}>
+            <button className="btn" id="toggleButton" onMouseOver={toggleContent}>
                 <span className="btn-text-one">WOTD</span>
-                <span className="btn-text-two"><h3 id="wordTitle">{WordOfTheDay.word}</h3></span>
+                <span className="btn-text-two"><h3 id="wordTitle">{wordOfTheDay.word}</h3></span>
             </button>
             {showMeaning && (
                 <div className="switch-content" id="meaningContent">
