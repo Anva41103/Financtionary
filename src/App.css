@@ -574,7 +574,7 @@ this softens the color of the shapes, but most prominently shows the shapes as i
 }
 
 .aboutbg {
-    background-image: url('./assets/aboutpics/aboutbg.jpeg');
+    background-image: url("./assets/aboutpics/aboutbg.jpeg");
     background-size: cover;
 }
 
