@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { blogPic } from './BlogImg';
 import Next from './assets/Next.png';
-import Prev from './assets/prev.png';
+import Prev from './assets/Prev.png';
 
 const PrevArrow = (props) => {
   const { className, onClick } = props;
