@@ -1,11 +1,12 @@
 import './App.css'
 import TextHome from './TextHome'
+import BlogPlay from './BlogHome'
 export function Main() {
 
     return (
         <>
             <div className='bggrad'>
-            
+
                 {/* <div className=" bg-pastel nav-bar flex flex-row justify-between  h-16 sticky rounded-xl m-40">
                     <div>
                         <img src="./src/assets/facebook.png"alt="" />
@@ -17,8 +18,17 @@ export function Main() {
                     </div>
                 </div> */}
                 <div className="w-full h-[90vh] flex flex-col justify-center items-center flex-wrap main-sec bg-transparent" >
-                <TextHome />
+                    <TextHome />
                 </div>
+                <div className='grid justify-center'>
+                    <div className='outer-container rounded-sm'>
+                        <div className='text-container font-bold text-xl'>"Explore, Inspire, Evolve: Your Daily Dose of Financial Insight!"</div>
+                        <div className='blog-container'><BlogPlay /></div>
+                    </div>
+                    
+                </div>
+                <div className='h-10'></div>
+
             </div>
         </>
     )

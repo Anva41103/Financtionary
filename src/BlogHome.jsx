@@ -38,10 +38,10 @@ const BlogPlay = () => {
   };
 
   return (
-    <Slider {...settings} className='bg-pink-500 w-1/2'>
+    <Slider {...settings} className='moveimg'>
       {blogPic.map((imageUrl, index) => (
-        <div key={index} className=' relative'>
-          <img className='mx-auto text-center border-2 h-' src={imageUrl} alt="" />
+        <div key={index} className='moveimg'>
+          <img className='mx-auto text-center border-2' src={imageUrl} alt="" />
         </div>
       ))}
     </Slider>

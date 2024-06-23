@@ -9,10 +9,10 @@ export function Home() {
         <>
             <Nav />
             <Main />
-            <div className='outer-container'>
-                <div className='text-container'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+            {/* <div className='outer-container'>
+                <div className='text-container font-bold text-xl'>"Explore, Inspire, Evolve: Your Daily Dose of Financial Insight!"</div>
                 <div className='blog-container'><BlogPlay/></div>
-            </div>
+            </div> */}
             <Foot />
         </>
     )
