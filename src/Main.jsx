@@ -13,7 +13,7 @@ import { BlogP2 } from "./BlogPg2"
 import { BlogP3 } from "./BlogPg3"
 import { BlogP4 } from "./BlogPg4"
 import { BlogP5 } from "./BlogPg5"
-import { Wotd } from "./try"
+import { Dict } from "./Dict"
 
 const router = createBrowserRouter([
   {
@@ -61,8 +61,8 @@ const router = createBrowserRouter([
         element: <BlogP4/>
       },
       {
-        path:'/Wotd',
-        element: <Wotd/>
+        path:'/Dict',
+        element: <Dict/>
       },
     ]
   }
