@@ -6,7 +6,4 @@ export default defineConfig({
   // base: "",
   base: "",
   plugins: [react()],
-  build: {
-    outDir: 'dist' // Default is 'dist'
-  }
 })
