@@ -1,7 +1,7 @@
 {
     "homepage": "https://aag2004.github.io/Financtionary/",
     "name": "financtionary",
-    "private": false,
+    "private": true,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
