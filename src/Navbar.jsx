@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import logo from "./assets/logo.jpeg"
 import WordOfTheDay from "./WordOfTheDay"
 export function Nav() {
 
@@ -7,7 +8,7 @@ export function Nav() {
             <div className="flex bglogin relative z-10">
                 <div className="w-full fixed bg-pastel nav-bar flex flex-row justify-between h-16 rounded-2xl ">
                     <div className="flex flex-row gap-10 mx-4 justify-between">
-                        <img className="h-12 m-2 w-12 rounded-full" src="./src/assets/logo.jpeg" alt="" />
+                        <img className="h-12 m-2 w-12 rounded-full" src={logo} alt="" />
                         <Link to="/Home"><button className="m-2 h-11 rounded-full navbutton">Home</button></Link>
                         <Link to="/Blog"><button className="m-2 px-4 h-11 rounded-full navbutton">Blog</button></Link>
                         <Link to="/Dict"><button className="m-2 px-4 h-11 rounded-full navbutton">Dictionary</button></Link>
