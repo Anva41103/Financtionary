@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
 import AatmikaImg from "./assets/aboutpics/aatmika.jpg"
 import AnanyaImg from "./assets/aboutpics/ananya.jpg"
+
+import gmailImg from './assets/social-media/gmail.png';  
+import githubImg from './assets/social-media/github.png';  
+import instagramImg from './assets/social-media/instagram.png';
+import linkedinImg from './assets/social-media/linkedin.png';  
 export function Card() {
 
     return (
@@ -18,10 +23,10 @@ export function Card() {
                             <div><a className="social-link" href="#"><img src="./src/assets/social-media/linkedin.png" /></a></div>
                             <div><a className="social-link" href="#"><img src="./src/assets/social-media/instagram.png" /></a></div>
                             <div><a className="social-link" href="#"><img src="./src/assets/social-media/gmail.png" /></a></div> */}
-                            <a className="social-link m-1" href="https://github.com/Aag2004"><img src="./src/assets/social-media/github.png" /></a>
-                            <a className="social-link m-1" href="https://www.linkedin.com/in/aatmika-gangeley-821175259"><img src="./src/assets/social-media/linkedin.png" /></a>
-                            <a className="social-link m-1" href="https://www.instagram.com/aatmikagangeley/?hl=en"><img src="./src/assets/social-media/instagram.png" /></a>
-                            <a className="social-link m-1" href="mailto:aatmika.gan2608@gmail.com"><img src="./src/assets/social-media/gmail.png" /></a>
+                            <a className="social-link m-1" href="https://github.com/Aag2004"><img src={githubImg} /></a>
+                            <a className="social-link m-1" href="https://www.linkedin.com/in/aatmika-gangeley-821175259"><img src={linkedinImg} /></a>
+                            <a className="social-link m-1" href="https://www.instagram.com/aatmikagangeley/?hl=en"><img src={instagramImg}/></a>
+                            <a className="social-link m-1" href="mailto:aatmika.gan2608@gmail.com"><img src={gmailImg}/></a>
                         </div>
 
                     </div>
@@ -44,10 +49,10 @@ export function Card() {
                             <div><a className="social-link" href="#"><img src="./src/assets/social-media/linkedin.png" /></a></div>
                             <div><a className="social-link" href="#"><img src="./src/assets/social-media/instagram.png" /></a></div>
                             <div><a className="social-link" href="#"><img src="./src/assets/social-media/gmail.png" /></a></div> */}
-                            <a className="social-link m-1" href="https://github.com/Anva41103"><img src="./src/assets/social-media/github.png" /></a>
-                            <a className="social-link m-1" href="https://www.linkedin.com/in/ananya-srivastava-98455825b"><img src="./src/assets/social-media/linkedin.png" /></a>
-                            <a className="social-link m-1" href="#"><img src="./src/assets/social-media/instagram.png" /></a>
-                            <a className="social-link m-1" href="mailto:praanu03@gmail.com"><img src="./src/assets/social-media/gmail.png" /></a>
+                            <a className="social-link m-1" href="https://github.com/Anva41103"><img src={githubImg}/></a>
+                            <a className="social-link m-1" href="https://www.linkedin.com/in/ananya-srivastava-98455825b"><img src={linkedinImg}/></a>
+                            <a className="social-link m-1" href="#"><img src={instagramImg} /></a>
+                            <a className="social-link m-1" href="mailto:praanu03@gmail.com"><img src={gmailImg}/></a>
                         </div>
                     </div>
                 </div>
