@@ -1,6 +1,6 @@
 import { Nav } from './Navbar'
 import { Foot } from './Footer'
-
+import bgim from"./assets/blogimages/blog4.png"
 export function BlogP4() {
 
     return (
@@ -8,7 +8,7 @@ export function BlogP4() {
             <Nav />
             <div class="blogpage playwrite-fr-moderne-xyz" >
                 <div id="grid" class="item">
-                    <div class="blogpage-image"><img src=".\src\assets\blogimages\blog2.jpg" alt=""/></div>
+                    <div class="blogpage-image"><img src={bgim} alt=""/></div>
                     <div class="blogpage-title">Loan Against Property: Unlocking the Value of Your Assets</div>
                 </div>
                 <p class="blogpage-body" id="myElement">

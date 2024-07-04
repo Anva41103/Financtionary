@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
-
+import AatmikaImg from "./assets/aboutpics/aatmika.jpg"
+import AnanyaImg from "./assets/aboutpics/ananya.jpg"
 export function Card() {
 
     return (
         <>
             <div className="cardabout">
-                <img src=".\src\assets\aboutpics\aatmika.jpg" alt="" />
+                <img src={AatmikaImg} alt="" />
                 <div className="cardabout__content">
                     <p className="cardabout__title">Aatmika Gangeley</p>
                     <p className="cardabout__description">Motivated and passionate Programmer. Confident orator, and occasional content writer. I am an enthusiastic learner, keen to expand my horizons in the professional realm and simultaneously looking forward to embrace challenges as opportunities for personal development.
@@ -27,7 +28,7 @@ export function Card() {
                 </div>
             </div>
             <div className="cardabout">
-                <img src=".\src\assets\aboutpics\minee.jpg" alt="" />
+                <img src={AnanyaImg} alt="" />
                 <div className="cardabout__content">
                     <p className="cardabout__title">Ananya Srivastava</p>
                     <p className="cardabout__description">An extroverted, enthusiastic, and creative CSE undergraduate with a strong

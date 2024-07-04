@@ -1,12 +1,18 @@
-export function Foot() {
+import React from 'react';
+import logoImg from './assets/logo.jpeg';  
+import gmailImg from './assets/social-media/gmail.png';  
+import twitterImg from './assets/social-media/twitter.png';  
+import instagramImg from './assets/social-media/instagram.png';
+import linkedinImg from './assets/social-media/linkedin.png';  
 
+export function Foot() {
     return (
         <>
             <footer className="footercol text-white p-5 text-center h-60">
                 <div className="max-w-5xl mx-auto flex flex-wrap justify-between">
 
                     <div className="flex-1 min-w-[200px] m-2">
-                        <img className="-ml-24 rounded-full h-36" src="./src/assets/logo.jpeg"/>
+                        <img className="-ml-24 rounded-full h-36" src={logoImg} alt="Logo" />
                     </div>
 
                     <div className="flex-1 min-w-[200px] m-2 text-left">
@@ -29,16 +35,16 @@ export function Foot() {
                     <div className="flex-1 min-w-[200px] m-2">
                         <h3 className="text-lg font-semibold mb-5">Follow Us</h3>
                         <a href='mailto:financtionary@gmail.com' target="_blank" className="text-gray-400 mr-2">
-                            <img src="./src/assets/social-media/gmail.png" alt="Facebook" className="w-10 h-10 inline-block" />
+                            <img src={gmailImg} alt="Gmail" className="w-10 h-10 inline-block" />
                         </a>
                         <a href="https://x.com/Financtionary" target="_blank" className="text-gray-400 mr-0 -ml-3">
-                            <img src="./src/assets/social-media/twitter.png" alt="Twitter" className="w-14 h-14 inline-block" />
+                            <img src={twitterImg} alt="Twitter" className="w-14 h-14 inline-block" />
                         </a>
                         <a href="https://www.instagram.com/financtionary/" target="_blank" className="text-gray-400 mr-2">
-                            <img src="./src/assets/social-media/instagram.png" alt="Instagram" className="w-10 h-10 inline-block" />
+                            <img src={instagramImg} alt="Instagram" className="w-10 h-10 inline-block" />
                         </a>
                         <a href="https://www.linkedin.com/in/financtionary-india-530944315/" target="_blank" className="text-gray-400">
-                            <img src="./src/assets/social-media/linkedin.png" alt="LinkedIn" className="w-10 h-10 inline-block" />
+                            <img src={linkedinImg} alt="LinkedIn" className="w-10 h-10 inline-block" />
                         </a>
                     </div>
                 </div>
@@ -46,7 +52,6 @@ export function Foot() {
                     <p>&copy; 2024 Financtionary. All rights reserved.</p>
                 </div>
             </footer>
-
         </>
-    )
+    );
 }

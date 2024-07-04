@@ -1,6 +1,7 @@
 import { Nav } from './Navbar'
 import { Foot } from './Footer'
 
+import bgim from"./assets/blogimages/blog2.jpg"
 export function BlogP2() {
 
     return (
@@ -8,7 +9,7 @@ export function BlogP2() {
             <Nav />
             <div class="blogpage playwrite-fr-moderne-xyz" >
                 <div id="grid" class="item">
-                    <div class="blogpage-image"><img src=".\src\assets\blogimages\blog4.png" alt="" /></div>
+                    <div class="blogpage-image"><img src={bgim} alt="" /></div>
                     <div class="blogpage-title">Mutual Funds: Diversified Investment for All</div>
                 </div>
                 <p class="blogpage-body" id="myElement">

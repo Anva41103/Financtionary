@@ -1,5 +1,6 @@
 import { Nav } from './Navbar'
 import { Foot } from './Footer'
+import bgim from"./assets/blogimages/blog3.jpeg"
 
 export function BlogP3() {
 
@@ -8,7 +9,7 @@ export function BlogP3() {
             <Nav />
             <div class="blogpage playwrite-fr-moderne-xyz" >
                 <div id="grid" class="item">
-                    <div class="blogpage-image"><img src=".\src\assets\blogimages\blog3.jpeg" alt="" /></div>
+                    <div class="blogpage-image"><img src={bgim} alt="" /></div>
                     <div class="blogpage-title">MSME Sector in India: The Backbone of the Economy</div>
                 </div>
                 <p class="blogpage-body" id="myElement">
